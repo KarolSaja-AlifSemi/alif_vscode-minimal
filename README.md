@@ -1,25 +1,16 @@
 # VSCode Getting Started Template
 A simple CMSIS-Pack based example to setup and test VS Code development environment for Alif Ensemble kits.
 
-- The solution consists of two projects
-  - **blinky** is a bare bone LED blinker
-  - **hello** demonstrates retargeting printf() to UART
-
 - Arm GNU toolchain is used as a default. There are build-type options for IAR and ARM compiler armclang for reference.
   - You can find the compiler specific settings in `cdefault.yaml`
   - **TIP:** The tools loaded by Arm Environment Manager are configured in `vcpkg-configuration.json`.
   - To download armclang you can add "arm:compilers/arm/armclang": "^6.22.0" to the "requires" object.
 
-## Note about Ensemble gen1 support
-The default main branch is set to support Gen 2 Ensemble devices. "gen1" branch must be used
-for older Gen 1 devices.
-
 ## Quick start
 First clone the template project repository
 ```
-git clone https://github.com/alifsemi/alif_vscode-template.git
-cd alif_vscode-template
-git submodule update --init
+git clone https://github.com/alifsemi/alif_vscode-minimal.git
+cd alif_vscode-minimal
 ```
 
 To build the template for a supported board other than the DevKit, you have to update the `board.h` file to pick the right variant of the board.
