@@ -1,0 +1,7 @@
+out/
+src/RTE/_*
+src/RTE/Device/*/*.base@1.0.0
+tmp/
+*.yml
+*.cprj
+*.zip
